@@ -7,8 +7,9 @@ int main()
 {
     string stdName, stdId;
     float ctest, midsem, exam, asignment, totmark;
+    cout<<"=====Student Grading System=====\n";
 
-    cout<<"Enter student's ID: ";
+    cout<<"\nEnter student's ID: ";
     cin>>stdId;
     cin.ignore();
     cout<<"Enter student's fullname: ";
