@@ -1,3 +1,4 @@
+//Rent Calculator for students in a Hostel
 #include <iostream>
 using namespace std;
 
