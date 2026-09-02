@@ -30,29 +30,32 @@ class Grades
 			cout<<"\nStudent ID: "<<sid;
 			cout<<"\nStudent Name: "<<sname<<endl;
 			cout<<"\nTotal Mark: "<<totmark<<"%"<<endl;
-			
-			if(totmark>100)
+
+			return 0;
+		};
+		double grading_system()
 			{
-				cout<<"\nError: Total mark Exceeds 100!!!....\n";
-			} else if(totmark>=80)
-			{
-				cout<<"Grade: A";
-			} else if (totmark>=70)
-			{
-				cout<<"Grade: B";
-			} else if (totmark>=60)
-			{
-				cout<<"Grade: C";
-			} else if (totmark>=50)
-			{
-				cout<<"Grade: D";
-			} else 
-			{
-				cout<<"You failed..."<<endl;
+				if(totmark>100)
+				{
+					cout<<"\nError: Total mark Exceeds 100!!!....\n";
+				} else if(totmark>=80)
+				{
+					cout<<"Grade: A";
+				} else if (totmark>=70)
+				{
+					cout<<"Grade: B";
+				} else if (totmark>=60)
+				{
+					cout<<"Grade: C";
+				} else if (totmark>=50)
+				{
+					cout<<"Grade: D";
+				} else 
+				{
+					cout<<"You failed..."<<endl;
+				}
+            	return 0;
 			}
-            return 0;
-		}
-        
 };
 
 int main()
@@ -60,6 +63,7 @@ int main()
 	Grades student1,student2,student3;
 	
 	student1.totalmark();
+	student2.grading_system();
 	
 	return 0;
 }
